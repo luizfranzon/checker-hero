@@ -1,2 +1,12 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<h1 class="text-3xl font-bold underline" (click)="handleSignIn()">Log In</h1>
+<h1 class="text-3xl font-bold underline" (click)="handleSignOut()">Log Out</h1>
+
+<p-button label="Submit" />
+
+@if (user() && user()?.displayName) {
+<p>Welcome, {{ user()?.displayName }}!</p>
+} @else {
+<p>Please log in.</p>
+}
+
 <router-outlet />
