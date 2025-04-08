@@ -1,0 +1,6 @@
+<div (click)="menu.toggle($event)" class="flex items-center cursor-pointer">
+  <p-avatar label="P" styleClass="mr-2" size="normal" shape="circle" />
+  <span class="font-bold">{{ user()?.displayName }}</span>
+</div>
+
+<p-menu #menu [model]="items()" [popup]="true" />

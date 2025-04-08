@@ -1,5 +1,6 @@
 @plugin 'tailwindcss-primeui';
 @layer tailwind, primeng;
+@import "primeicons/primeicons.css";
 
 @layer tailwind {
   @import "tailwindcss";
