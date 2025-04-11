@@ -1,1 +1,18 @@
 <app-header />
+
+<p-tabs value="0">
+  <p-tablist>
+    <p-tab value="0">Modelos ({{ checklistModels().length }})</p-tab>
+    <p-tab value="1">Listas (0)</p-tab>
+  </p-tablist>
+  <p-tabpanels>
+    <p-tabpanel value="0">
+      @for (checkListModel of checklistModels(); track checkListModel) {
+      <span>
+        {{ checkListModel.title }}
+      </span>
+      }
+    </p-tabpanel>
+    <p-tabpanel value="1"> </p-tabpanel>
+  </p-tabpanels>
+</p-tabs>
